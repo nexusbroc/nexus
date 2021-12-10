@@ -28,10 +28,10 @@ a
 | [/api/v1/making/makingConfigs/create](#新增做市配置)  | POST  | 新增做市配置         |
 | [/api/v1/making/makingConfigs/update](#修改做市配置)  | PUT  | 修改做市配置         |
 | [/api/v1/making/makingConfigs/delete](#删除做市配置)  | DELETE  | 删除做市配置         |
-| [/api/v1/making/targetPriceConfigs](#get-target-price-config)  | GET  | get |目标价格| config         |
-| [/api/v1/making/targetPriceConfigs/create](#add-target-price-config)  | PUT  | add |目标价格| config         |
-| [/api/v1/making/targetPriceConfigs/update](#update-target-price-config)  | POST  | update |目标价格| config         |
-| [/api/v1/making/targetPriceConfigs/delete](#delete-target-price-config)  | DELETE  | delete |目标价格| config         |
+| [/api/v1/making/targetPriceConfigs](#get-target-price-config)  | GET  | 获取目标价格配置配置         |
+| [/api/v1/making/targetPriceConfigs/create](#add-target-price-config)  | PUT  | 添加目标价格配置配置         |
+| [/api/v1/making/targetPriceConfigs/update](#update-target-price-config)  | POST  | 更新目标价格配置配置         |
+| [/api/v1/making/targetPriceConfigs/delete](#delete-target-price-config)  | DELETE  | 删除目标价格配置         |
 
 ## Restful API
 ### 登陆接口
