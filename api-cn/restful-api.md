@@ -188,9 +188,9 @@ RequestBody:（order）
 | orderPrice    | Y        | number     | 订单价格               |         |              |
 | slippage      |          | number     | 滑点                 |         |              |
 | orderVolume   | Y        | number     | 订单数量               |         |              |
-| side          | Y        | string     | [买卖方向(Side)](https://github.com/nexusbroc/nexus/api-en/enum.md#side)        |         |              |
-| orderType     | Y        | string     | [订单类型(OrderType)](https://github.com/nexusbroc/nexus/api-en/enum.md#ordertype)   |         |              |
-| timeInForce   | Y        | string     | [过期类型(TimeInForce)](https://github.com/nexusbroc/nexus/api-en/enum.md#timeinforce) |         |              |
+| side          | Y        | string     | [买卖方向(Side)](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#side)        |         |              |
+| orderType     | Y        | string     | [订单类型(OrderType)](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#ordertype)   |         |              |
+| timeInForce   | Y        | string     | [过期类型(TimeInForce)](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#timeinforce) |         |              |
 | clientOrderId |          | string     | 客户端订单ID                    |         |              |
 
 ***请求参数示例***
@@ -223,11 +223,11 @@ RequestBody:（order）
 | executeVolume | number     | 成交数量              |
 | orderVolume   | number     | 订单数量              |
 | pendingVolume | number     | 未成交数量              |
-| side          | string     | [买卖方向(Side)](https://github.com/nexusbroc/nexus/api-en/enum.md#side)        |
-| orderType     | string     | [订单类型(OrderType)](https://github.com/nexusbroc/nexus/api-en/enum.md#ordertype)   |
-| status        | string     | [状态(OrderStatus)](https://github.com/nexusbroc/nexus/api-en/enum.md#orderstatus)     |
-| timeInForce   | string     | [过期类型(TimeInForce)](https://github.com/nexusbroc/nexus/api-en/enum.md#timeinforce) |
-| orderResult   | string     | [投递结果类型(DealingResult)](https://github.com/nexusbroc/nexus/api-en/enum.md#orderresult) |
+| side          | string     | [买卖方向(Side)](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#side)        |
+| orderType     | string     | [订单类型(OrderType)](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#ordertype)   |
+| status        | string     | [状态(OrderStatus)](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#orderstatus)     |
+| timeInForce   | string     | [过期类型(TimeInForce)](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#timeinforce) |
+| orderResult   | string     | [投递结果类型(DealingResult)](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#orderresult) |
 | orderTime     | integer    | 订单时间              |
 | executeTime   | integer    | 成交时间                  |
 | clientOrderId | string     | 客户端订单ID                  |
@@ -312,10 +312,10 @@ X-API-TOKEN:token（通过login获得）
 | executeVolume | number     | 成交数量              |
 | orderVolume   | number     | 订单数量              |
 | pendingVolume | number     | 未成交数量              |
-| side          | string     | [买卖方向(Side)](https://github.com/nexusbroc/nexus/api-en/enum.md#side)        |
-| orderType     | string     | [订单类型(OrderType)](https://github.com/nexusbroc/nexus/api-en/enum.md#ordertype)   |
-| status        | string     | [状态(OrderStatus)](https://github.com/nexusbroc/nexus/api-en/enum.md#orderstatus)     |
-| timeInForce   | string     | [过期类型(TimeInForce)](https://github.com/nexusbroc/nexus/api-en/enum.md#timeinforce) |
+| side          | string     | [买卖方向(Side)](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#side)        |
+| orderType     | string     | [订单类型(OrderType)](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#ordertype)   |
+| status        | string     | [状态(OrderStatus)](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#orderstatus)     |
+| timeInForce   | string     | [过期类型(TimeInForce)](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#timeinforce) |
 | orderTime     | integer    | 订单时间              |
 | executeTime   | integer    | 成交时间              |
 | clientOrderId | string     | 客户端订单ID              |
@@ -386,10 +386,10 @@ X-API-TOKEN:token（acquired from login）
 | executeVolume | number     | 成交数量              |
 | orderVolume   | number     | 订单数量              |
 | pendingVolume | number     | 未成交数量              |
-| side          | string     | [买卖方向(Side)](https://github.com/nexusbroc/nexus/api-en/enum.md#side)        |
-| orderType     | string     | [订单类型(OrderType)](https://github.com/nexusbroc/nexus/api-en/enum.md#ordertype)   |
-| status        | string     | [状态(OrderStatus)](https://github.com/nexusbroc/nexus/api-en/enum.md#orderstatus)     |
-| timeInForce   | string     | [过期类型(TimeInForce)](https://github.com/nexusbroc/nexus/api-en/enum.md#timeinforce) |
+| side          | string     | [买卖方向(Side)](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#side)        |
+| orderType     | string     | [订单类型(OrderType)](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#ordertype)   |
+| status        | string     | [状态(OrderStatus)](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#orderstatus)     |
+| timeInForce   | string     | [过期类型(TimeInForce)](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#timeinforce) |
 | orderTime     | integer    | 订单时间              |
 | executeTime   | integer    | 成交时间              |
 | clientOrderId | string     | 客户端订单ID              |
@@ -457,7 +457,7 @@ X-API-TOKEN:token（通过login获得）
 | :------------- | :--------- | :------------- |
 | cp             | string     | 交易对手名称          |
 | symbol         | string     | 交易币对名称       |
-| side           | string     | [买卖方向(Side)](https://github.com/nexusbroc/nexus/api-en/enum.md#side) |
+| side           | string     | [买卖方向(Side)](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#side) |
 | executeAmount  | number     | 成交金额       |
 | executePrice   | number     | 成交价格       |
 | cpExecutionid  | number     | CP约定ID       |
@@ -508,7 +508,7 @@ X-API-TOKEN:token（通过login获得）
 | :------- | :------- | :------ | :---------------- | :------ | :----------- |
 | cp       |          | string   | 交易对手名称             | -       |              |
 | symbol   |          | string | 货币对名称          | -       |              |
-| status   |          | string  | [状态(OrderStatus)](https://github.com/nexusbroc/nexus/api-en/enum.md#orderstatus) | -       |              |
+| status   |          | string  | [状态(OrderStatus)](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#orderstatus) | -       |              |
 | from     | Y        | integer    | 开始时间          | -       |              |
 | to       | Y        | integer    | 结束时间          | -       |              |
 | pageNo   |          | integer | 页码              | -       |              |
@@ -525,10 +525,10 @@ X-API-TOKEN:token（通过login获得）
 | cp            | string     | 交易对手名称              |
 | symbol        | string     | 币对名称             |
 | orderId       | integer    | 父订单ID              |
-| side          | string     | [买卖方向(Side)](https://github.com/nexusbroc/nexus/api-en/enum.md#side)        |
-| status        | string     | [状态(OrderStatus)](https://github.com/nexusbroc/nexus/api-en/enum.md#orderstatus)     |
-| orderResult   | string     | [投递结果类型(DealingResult)](https://github.com/nexusbroc/nexus/api-en/enum.md#orderresult)     |
-| orderType     | string     | [订单类型(OrderType)](https://github.com/nexusbroc/nexus/api-en/enum.md#ordertype)   |
+| side          | string     | [买卖方向(Side)](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#side)        |
+| status        | string     | [状态(OrderStatus)](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#orderstatus)     |
+| orderResult   | string     | [投递结果类型(DealingResult)](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#orderresult)     |
+| orderType     | string     | [订单类型(OrderType)](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#ordertype)   |
 | orderPrice    | number     | 订单价格              |
 | executeAmount | number     | 成交金额              |
 | orderVolume   | number     | 订单数量              |
@@ -536,7 +536,7 @@ X-API-TOKEN:token（通过login获得）
 | executeVolume | number     | 成交数量              |
 | executeTime   | integer    | 成交时间              |
 | orderTime     | integer    | 订单时间              |
-| timeInForce   | string     | [过期类型(TimeInForce)](https://github.com/nexusbroc/nexus/api-en/enum.md#timeinforce) |
+| timeInForce   | string     | [过期类型(TimeInForce)](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#timeinforce) |
 | commission    | number     | 手续费                |
 | rejectReason  | string     | 拒绝原因              |
 | orderComment  | string     | 备注                  |
@@ -665,7 +665,7 @@ X-API-TOKEN:token（通过login获得）
 | :------- | :------- | :------ | :---------------- | :------ | :----------- |
 | cp       |          | string  | 交易对手名称             | -       |              |
 | symbol   |          | string  | 交易币对名称          | -       |              |
-| status   |          | string  | [状态(OrderStatus)](https://github.com/nexusbroc/nexus/api-en/enum.md#orderstatus) | -       |              |
+| status   |          | string  | [状态(OrderStatus)](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#orderstatus) | -       |              |
 | from     | Y        | integer    | 开始时间          | -       |              |
 | to       | Y        | integer    | 结束时间          | -       |              |
 | pageNo   |          | integer | 页码              | -       |              |
@@ -682,10 +682,10 @@ X-API-TOKEN:token（通过login获得）
 | cp            | string     | 交易对手名称                |
 | symbol        | string     | 交易币对名称              |
 | orderId       | integer    | 父订单ID              |
-| side          | string     | [买卖方向(Side)](https://github.com/nexusbroc/nexus/api-en/enum.md#side)       |
-| status        | string     | [状态(OrderStatus)](https://github.com/nexusbroc/nexus/api-en/enum.md#orderstatus)     |
-| orderType     | string     | [订单类型(OrderType)](https://github.com/nexusbroc/nexus/api-en/enum.md#ordertype)   |
-| orderResult   | string     | [投递结果类型(DealingResult)](https://github.com/nexusbroc/nexus/api-en/enum.md#orderresult)     |
+| side          | string     | [买卖方向(Side)](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#side)       |
+| status        | string     | [状态(OrderStatus)](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#orderstatus)     |
+| orderType     | string     | [订单类型(OrderType)](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#ordertype)   |
+| orderResult   | string     | [投递结果类型(DealingResult)](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#orderresult)     |
 | executeAmount | number     | 成交金额              |
 | orderPrice    | number     | 订单价格              |
 | executeVolume | number     | 成交数量              |
@@ -693,7 +693,7 @@ X-API-TOKEN:token（通过login获得）
 | pendingVolume | number     | 未成交数量              |
 | orderTime     | integer    | 订单时间              |
 | executeTime   | integer    | 成交时间              |
-| timeInForce   | string     | [过期类型(TimeInForce)](https://github.com/nexusbroc/nexus/api-en/enum.md#timeinforce) |
+| timeInForce   | string     | [过期类型(TimeInForce)](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#timeinforce) |
 | commission    | number     | 手续费                |
 | rejectReason  | string     | 拒绝原因              |
 | orderComment  | string     | 备注                  |
@@ -782,7 +782,7 @@ X-API-TOKEN:token（通过login获得）
 | cp             | string     | 交易对手名称          |
 | symbol         | string     | 交易币对名称    |
 | cpOrderId      | integer    | CP订单ID         |
-| side           | string     | [买卖方向(Side)](https://github.com/nexusbroc/nexus/api-en/enum.md#side) |
+| side           | string     | [买卖方向(Side)](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#side) |
 | executePrice   | number     | 价格           |
 | executeVolume  | number     | 成交数量       |
 | executeAmount  | number     | 成交金额       |
@@ -955,8 +955,8 @@ X-API-TOKEN:token（acquired from login）
 | volumeMinScale                |integer      |交易量最小精度|
 | volumeMaxScale                |integer      |交易量最大精度|
 | tickSize                      |number       |最小价格单位|
-| restriction                   |string       |[限制](https://github.com/nexusbroc/nexus/api-en/enum.md#MakingRestriction)|
-| l1ConfigType                  |string       |[配置类型](https://github.com/nexusbroc/nexus/api-en/enum.md#MakingOrderType)|
+| restriction                   |string       |[限制](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#MakingRestriction)|
+| l1ConfigType                  |string       |[配置类型](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#MakingOrderType)|
 | l1ConfigVersion               |integer      |做市配置版本|
 | l1OrderActive                 |string       |L1 订单|
 | l1LadderDepth                 |string       |深度|
@@ -975,8 +975,8 @@ X-API-TOKEN:token（acquired from login）
 | tradeAnnexableSize            |number       |强制成交阀值|
 | l2LadderDepth                 |string       |深度|
 | l2PriceLimit                  |number       |价格限制|
-| l2Benchmark                   |string       |[基准](https://github.com/nexusbroc/nexus/api-en/enum.md#MakingDiffType)|
-| l2BenchmarkType               |string       |[基准类型](https://github.com/nexusbroc/nexus/api-en/enum.md#PriceAdjustType)|
+| l2Benchmark                   |string       |[基准](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#MakingDiffType)|
+| l2BenchmarkType               |string       |[基准类型](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#PriceAdjustType)|
 | l2DifferenceValue             |number       |差价|
 | l2DifferencePercentage        |number       |差价百分比|
 | l2ThresholdValue              |number       |阈值|
@@ -986,7 +986,7 @@ X-API-TOKEN:token（acquired from login）
 | l2AskMinVolume                |number       |ASK最小交易数量|
 | l2AskMaxVolume                |number       |ASK最大交易数量|
 | l2OrderActive                 |bool         |L2 订单|
-| simulateType                  |string       |[模拟类型](https://github.com/nexusbroc/nexus/api-en/enum.md#SimulateType)|
+| simulateType                  |string       |[模拟类型](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#SimulateType)|
 | targetTime                    |string       |目标时间|
 | targetPrice                   |number       |目标价格|
 | startTime                     |string       |开始时间|
@@ -1150,8 +1150,8 @@ X-API-TOKEN:token（acquired from login）
 | volumeMinScale                |     Y       |integer      |交易量最小精度|
 | volumeMaxScale                |     Y       |integer      |交易量最大精度|
 | tickSize                      |     Y       |number       |最小价格单位|
-| restriction                   |     Y       |string       |[限制](https://github.com/nexusbroc/nexus/api-en/enum.md#MakingRestriction)|
-| l1ConfigType                  |     Y       |string       |[配置类型](https://github.com/nexusbroc/nexus/api-en/enum.md#MakingOrderType)|
+| restriction                   |     Y       |string       |[限制](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#MakingRestriction)|
+| l1ConfigType                  |     Y       |string       |[配置类型](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#MakingOrderType)|
 | l1ConfigVersion               |     Y       |integer      |做市配置版本|
 | l1OrderActive                 |     Y       |string       |L1 订单|
 | l1LadderDepth                 |     Y       |string       |深度|
@@ -1171,7 +1171,7 @@ X-API-TOKEN:token（acquired from login）
 | l2LadderDepth                 |    Y        |string       |深度|
 | l2PriceLimit                  |    Y        |number       |价格限制|
 | l2Benchmark                   |    Y        |string       |基准|
-| l2BenchmarkType               |    Y        |string       |[基准类型](https://github.com/nexusbroc/nexus/api-en/enum.md#PriceAdjustType)|
+| l2BenchmarkType               |    Y        |string       |[基准类型](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#PriceAdjustType)|
 | l2DifferenceValue             |             |number       |差价|
 | l2DifferencePercentage        |             |number       |差价百分比|
 | l2ThresholdValue              |             |number       |阈值|
@@ -1293,8 +1293,8 @@ X-API-TOKEN:token（acquired from login）
 | volumeMinScale                |     Y       |integer      |交易量最小精度|
 | volumeMaxScale                |     Y       |integer      |交易量最大精度|
 | tickSize                      |     Y       |number       |最小价格单位|
-| restriction                   |     Y       |string       |[限制](https://github.com/nexusbroc/nexus/api-en/enum.md#MakingRestriction)|
-| l1ConfigType                  |     Y       |string       |[配置类型](https://github.com/nexusbroc/nexus/api-en/enum.md#MakingOrderType)|
+| restriction                   |     Y       |string       |[限制](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#MakingRestriction)|
+| l1ConfigType                  |     Y       |string       |[配置类型](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#MakingOrderType)|
 | l1ConfigVersion               |     Y       |integer      |做市配置版本|
 | l1OrderActive                 |     Y       |string       |L1 订单|
 | l1LadderDepth                 |     Y       |string       |深度|
@@ -1314,7 +1314,7 @@ X-API-TOKEN:token（acquired from login）
 | l2LadderDepth                 |    Y        |string       |深度|
 | l2PriceLimit                  |    Y        |number       |价格限制|
 | l2Benchmark                   |    Y        |string       |基准|
-| l2BenchmarkType               |    Y        |string       |[基准类型](https://github.com/nexusbroc/nexus/api-en/enum.md#PriceAdjustType)|
+| l2BenchmarkType               |    Y        |string       |[基准类型](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#PriceAdjustType)|
 | l2DifferenceValue             |             |number       |差价|
 | l2DifferencePercentage        |             |number       |差价百分比|
 | l2ThresholdValue              |             |number       |阈值|
@@ -1511,7 +1511,7 @@ X-API-TOKEN:token（acquired from login）
 | :---------------------------- | :---------- | :------------------------ |
 | cp                            |string       |cp|
 | symbol                        |string       |币对|
-| simulateType                  |string       |[模拟类型](https://github.com/nexusbroc/nexus/api-en/enum.md#SimulateType)|
+| simulateType                  |string       |[模拟类型](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#SimulateType)|
 | targetTime                    |number       |目标时间|
 | targetPrice                   |number       |目标价格|
 | startTime                     |number       |开始时间|
@@ -1572,7 +1572,7 @@ X-API-TOKEN:token（acquired from login）
 | :---------------------------- | :----------  | :---------- | :------------------------ |
 | cp                            |     Y        |string       |cp|
 | symbol                        |     Y        |string       |币对|
-| simulateType                  |     Y        |string       |[模拟类型](https://github.com/nexusbroc/nexus/api-en/enum.md#SimulateType)|
+| simulateType                  |     Y        |string       |[模拟类型](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#SimulateType)|
 | targetTime                    |     Y        |number       |目标时间|
 | targetPrice                   |     Y        |number       |目标价格|
 | startTime                     |              |number       |开始时间|
@@ -1674,7 +1674,7 @@ X-API-TOKEN:token（acquired from login）
 | :---------------------------- | :----------  | :---------- | :------------------------ |
 | cp                            |     Y        |string       |cp|
 | symbol                        |     Y        |string       |币对|
-| simulateType                  |     Y        |string       |[模拟类型](https://github.com/nexusbroc/nexus/api-en/enum.md#SimulateType)|
+| simulateType                  |     Y        |string       |[模拟类型](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#SimulateType)|
 | targetTime                    |     Y        |number       |目标时间|
 | targetPrice                   |     Y        |number       |目标价格|
 | startTime                     |              |number       |开始时间|

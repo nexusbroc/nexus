@@ -185,9 +185,9 @@ RequestBody:（order）
 | orderPrice    | Y        | number     | order Price               |         |              |
 | slippage      |          | number     | slippage                 |         |              |
 | orderVolume   | Y        | number     | order Volume               |         |              |
-| side          | Y        | string     | [BUY or SELL(Side)](https://github.com/nexusbroc/nexus/api-en/enum.md#side)      |         |              |
-| orderType     | Y        | string     | [Order Type(OrderType)](https://github.com/nexusbroc/nexus/api-en/enum.md#ordertype)  |         |              |
-| timeInForce   | Y        | string     | [Time InForce(TimeInForce)](https://github.com/nexusbroc/nexus/api-en/enum.md#timeinforce) |         |              |
+| side          | Y        | string     | [BUY or SELL(Side)](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#side)      |         |              |
+| orderType     | Y        | string     | [Order Type(OrderType)](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#ordertype)  |         |              |
+| timeInForce   | Y        | string     | [Time InForce(TimeInForce)](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#timeinforce) |         |              |
 | clientOrderId |          | string     | clinet order id |         |              |
 
 ***example of request***
@@ -220,11 +220,11 @@ RequestBody:（order）
 | executeVolume | number     | executed Volume              |
 | orderVolume   | number     | order Volume              |
 | pendingVolume | number     | pending Volume              |
-| side          | string     | [BUY or SELL(Side)](https://github.com/nexusbroc/nexus/api-en/enum.md#side)]       |
-| orderType     | string     | [Order Type(OrderType)](https://github.com/nexusbroc/nexus/api-en/enum.md#ordertype)  |
-| status        | string     | [Order Status(OrderStatus)](https://github.com/nexusbroc/nexus/api-en/enum.md#orderstatus)     |
-| timeInForce   | string     | [Time InForce(TimeInForce)](https://github.com/nexusbroc/nexus/api-en/enum.md#timeinforce) |
-| orderResult   | string     | [Dealing Result(DealingResult)](https://github.com/nexusbroc/nexus/api-en/enum.md#dealingresult) |
+| side          | string     | [BUY or SELL(Side)](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#side)]       |
+| orderType     | string     | [Order Type(OrderType)](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#ordertype)  |
+| status        | string     | [Order Status(OrderStatus)](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#orderstatus)     |
+| timeInForce   | string     | [Time InForce(TimeInForce)](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#timeinforce) |
+| orderResult   | string     | [Dealing Result(DealingResult)](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#dealingresult) |
 | orderTime     | integer    | place order Time              |
 | executeTime   | integer    | executed Time                  |
 | clientOrderId | string     | clinet order id                  |
@@ -309,10 +309,10 @@ X-API-TOKEN:token（acquired from login）
 | executeVolume | number     | executed Volume              |
 | orderVolume   | number     | order Volume              |
 | pendingVolume | number     | pending Volume              |
-| side          | string     | [BUY or SELL(Side)](https://github.com/nexusbroc/nexus/api-en/enum.md#side)        |
-| orderType     | string     | [Order Type(OrderType)](https://github.com/nexusbroc/nexus/api-en/enum.md#ordertype)   |
-| status        | string     | [Order Status(OrderStatus)](https://github.com/nexusbroc/nexus/api-en/enum.md#orderstatus)     |
-| timeInForce   | string     | [Time InForce(TimeInForce)](https://github.com/nexusbroc/nexus/api-en/enum.md#timeinforce) |
+| side          | string     | [BUY or SELL(Side)](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#side)        |
+| orderType     | string     | [Order Type(OrderType)](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#ordertype)   |
+| status        | string     | [Order Status(OrderStatus)](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#orderstatus)     |
+| timeInForce   | string     | [Time InForce(TimeInForce)](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#timeinforce) |
 | orderTime     | integer    | place order Time              |
 | executeTime   | integer    | executed Time              |
 | clientOrderId | string     | client order ID              |
@@ -368,10 +368,10 @@ X-API-TOKEN:token（acquired from login）
 | executeVolume | number     | executed Volume              |
 | orderVolume   | number     | order Volume              |
 | pendingVolume | number     | pending Volume              |
-| side          | string     | [BUY or SELL(Side)](https://github.com/nexusbroc/nexus/api-en/enum.md#side)        |
-| orderType     | string     | [Order Type(OrderType)](https://github.com/nexusbroc/nexus/api-en/enum.md#ordertype)   |
-| status        | string     | [Order Status(OrderStatus)](https://github.com/nexusbroc/nexus/api-en/enum.md#orderstatus)     |
-| timeInForce   | string     | [Time InForce(TimeInForce)](https://github.com/nexusbroc/nexus/api-en/enum.md#timeinforce) |
+| side          | string     | [BUY or SELL(Side)](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#side)        |
+| orderType     | string     | [Order Type(OrderType)](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#ordertype)   |
+| status        | string     | [Order Status(OrderStatus)](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#orderstatus)     |
+| timeInForce   | string     | [Time InForce(TimeInForce)](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#timeinforce) |
 | orderTime     | integer    | place order Time              |
 | executeTime   | integer    | executed Time              |
 | clientOrderId | string     | client order ID              |
@@ -439,7 +439,7 @@ X-API-TOKEN:token（acquired from login）
 | :------------- | :--------- | :------------- |
 | cp             | string     | counter party name          |
 | symbol         | string     | crypto pair name       |
-| side           | string     | [BUY or SELL(Side)](https://github.com/nexusbroc/nexus/api-en/enum.md#side) |
+| side           | string     | [BUY or SELL(Side)](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#side) |
 | executeAmount  | number     | executed Amount       |
 | executePrice   | number     | executed Price       |
 | cpExecutionid  | number     | CP execution ID       |
@@ -490,7 +490,7 @@ X-API-TOKEN:token（acquired from login）
 | :------- | :------- | :------ | :---------------- | :------ | :----------- |
 | cp       |          | string   | counter party name             | -       |              |
 | symbol   |          | string | crypto pair name          | -       |              |
-| status   |          | string  | [Order Status(OrderStatus)](https://github.com/nexusbroc/nexus/api-en/enum.md#orderstatus) | -       |              |
+| status   |          | string  | [Order Status(OrderStatus)](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#orderstatus) | -       |              |
 | from     | Y        | integer    | time started         | -       |              |
 | to       | Y        | integer    | time ended         | -       |              |
 | pageNo   |          | integer | page NO              | -       |              |
@@ -507,10 +507,10 @@ X-API-TOKEN:token（acquired from login）
 | cp            | string     | counter party name              |
 | symbol        | string     | crypto pair name             |
 | orderId       | integer    | parent ID              |
-| side          | string     | [BUY or SELL(Side)](https://github.com/nexusbroc/nexus/api-en/enum.md#side)       |
-| status        | string     | [Order Status(OrderStatus)](https://github.com/nexusbroc/nexus/api-en/enum.md#orderstatus)    |
-| orderResult   | string     | [Dealing Result(DealingResult)](https://github.com/nexusbroc/nexus/api-en/enum.md#dealingresult)    |
-| orderType     | string     | [Order Type(OrderType)](https://github.com/nexusbroc/nexus/api-en/enum.md#ordertype)   |
+| side          | string     | [BUY or SELL(Side)](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#side)       |
+| status        | string     | [Order Status(OrderStatus)](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#orderstatus)    |
+| orderResult   | string     | [Dealing Result(DealingResult)](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#dealingresult)    |
+| orderType     | string     | [Order Type(OrderType)](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#ordertype)   |
 | orderPrice    | number     | order Price              |
 | executeAmount | number     | executed Amount              |
 | orderVolume   | number     | order Volume              |
@@ -518,7 +518,7 @@ X-API-TOKEN:token（acquired from login）
 | executeVolume | number     | executed Volume              |
 | executeTime   | integer    | executed Time              |
 | orderTime     | integer    | place order Time              |
-| timeInForce   | string     | [Time InForce(TimeInForce)](https://github.com/nexusbroc/nexus/api-en/enum.md#timeinforce) |
+| timeInForce   | string     | [Time InForce(TimeInForce)](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#timeinforce) |
 | commission    | number     | commission                |
 | rejectReason  | string     | reject Reason              |
 | orderComment  | string     | comment                  |
@@ -647,7 +647,7 @@ X-API-TOKEN:token（acquired from login）
 | :------- | :------- | :------ | :---------------- | :------ | :----------- |
 | cp       |          | string  | counter party name             | -       |              |
 | symbol   |          | string  | crypto pair name          | -       |              |
-| status   |          | string  | [Order Status(OrderStatus)](https://github.com/nexusbroc/nexus/api-en/enum.md#orderstatus) | -       |              |
+| status   |          | string  | [Order Status(OrderStatus)](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#orderstatus) | -       |              |
 | from     | Y        | integer | time started          | -       |              |
 | to       | Y        | integer | time ended          | -       |              |
 | pageNo   |          | integer | page NO              | -       |              |
@@ -664,10 +664,10 @@ X-API-TOKEN:token（acquired from login）
 | cp            | string     | counter party name                |
 | symbol        | string     | crypto pair name              |
 | orderId       | integer    | parent order ID              |
-| side          | string     | [BUY or SELL(Side)](https://github.com/nexusbroc/nexus/api-en/enum.md#side)      |
-| status        | string     | [Order Status(OrderStatus)](https://github.com/nexusbroc/nexus/api-en/enum.md#orderstatus)     |
-| orderType     | string     | [Order Type(OrderType)](https://github.com/nexusbroc/nexus/api-en/enum.md#ordertype)   |
-| orderResult   | string     | [Dealing Result(DealingResult)](https://github.com/nexusbroc/nexus/api-en/enum.md#dealingresult)    |
+| side          | string     | [BUY or SELL(Side)](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#side)      |
+| status        | string     | [Order Status(OrderStatus)](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#orderstatus)     |
+| orderType     | string     | [Order Type(OrderType)](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#ordertype)   |
+| orderResult   | string     | [Dealing Result(DealingResult)](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#dealingresult)    |
 | executeAmount | number     | executed Amount              |
 | orderPrice    | number     | order Price              |
 | executeVolume | number     | executed Volume              |
@@ -675,7 +675,7 @@ X-API-TOKEN:token（acquired from login）
 | pendingVolume | number     | pending Volume              |
 | orderTime     | integer    | place order Time              |
 | executeTime   | integer    | executed Time              |
-| timeInForce   | string     | [Time InForce(TimeInForce)](https://github.com/nexusbroc/nexus/api-en/enum.md#timeinforce) |
+| timeInForce   | string     | [Time InForce(TimeInForce)](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#timeinforce) |
 | commission    | number     | commission                |
 | rejectReason  | string     | reject Reason              |
 | orderComment  | string     | comment                  |
@@ -764,7 +764,7 @@ X-API-TOKEN:token（acquired from login）
 | cp             | string     | couter party name          |
 | symbol         | string     | crypto pair name    |
 | cpOrderId      | integer    | CP order ID         |
-| side           | string     | [BUY or SELL(Side)](https://github.com/nexusbroc/nexus/api-en/enum.md#side) |
+| side           | string     | [BUY or SELL(Side)](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#side) |
 | executePrice   | number     | executed Price           |
 | executeVolume  | number     | executed Volume       |
 | executeAmount  | number     | executed Amount       |
@@ -990,8 +990,8 @@ X-API-TOKEN:token（acquired from login）
 | volumeMinScale                |integer      |Volume Min Scale|
 | volumeMaxScale                |integer      |Volume Max Scale|
 | tickSize                      |number       |Tick Size|
-| restriction                   |string       |[Restriction](https://github.com/nexusbroc/nexus/api-en/enum.md#MakingRestriction)|
-| l1ConfigType                  |string       |[ConfigT Type](https://github.com/nexusbroc/nexus/api-en/enum.md#MakingOrderType)|
+| restriction                   |string       |[Restriction](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#MakingRestriction)|
+| l1ConfigType                  |string       |[ConfigT Type](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#MakingOrderType)|
 | l1ConfigVersion               |integer       |Config Version|
 | l1OrderActive                 |string       |L1 Order|
 | l1LadderDepth                 |string       |Depth|
@@ -1010,8 +1010,8 @@ X-API-TOKEN:token（acquired from login）
 | tradeAnnexableSize            |number       |Force Trade Volume|
 | l2LadderDepth                 |string       |Depth|
 | l2PriceLimit                  |number       |Price Limit|
-| l2Benchmark                   |string       |[Benchmark](https://github.com/nexusbroc/nexus/api-en/enum.md#MakingDiffType)|
-| l2BenchmarkType               |string       |[Benchmark Type](https://github.com/nexusbroc/nexus/api-en/enum.md#PriceAdjustType)|
+| l2Benchmark                   |string       |[Benchmark](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#MakingDiffType)|
+| l2BenchmarkType               |string       |[Benchmark Type](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#PriceAdjustType)|
 | l2DifferenceValue             |number       |Difference Value|
 | l2DifferencePercentage        |number       |Difference Percentage|
 | l2ThresholdValue              |number       |Threshold Value|
@@ -1022,7 +1022,7 @@ X-API-TOKEN:token（acquired from login）
 | l2AskMaxVolume                |number       |Ask Max Volume|
 | l2OrderActive                 |bool       |L2 Order|
 
-| simulateType                  |string       |[Simulate Type](https://github.com/nexusbroc/nexus/api-en/enum.md#SimulateType)|
+| simulateType                  |string       |[Simulate Type](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#SimulateType)|
 | targetTime                    |string       |Target Time|
 | targetPrice                   |number       |Target Price|
 | startTime                     |string       |Start Time|
@@ -1185,8 +1185,8 @@ X-API-TOKEN:token（acquired from login）
 | volumeMinScale                |     Y       |integer      |Volume Min Scale|
 | volumeMaxScale                |     Y       |integer      |Volume Max Scale|
 | tickSize                      |     Y       |number       |Tick Size|
-| restriction                   |     Y       |string       |[Restriction](https://github.com/nexusbroc/nexus/api-en/enum.md#MakingRestriction)|
-| l1ConfigType                  |     Y       |string       |[ConfigT Type](https://github.com/nexusbroc/nexus/api-en/enum.md#MakingOrderType)|
+| restriction                   |     Y       |string       |[Restriction](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#MakingRestriction)|
+| l1ConfigType                  |     Y       |string       |[ConfigT Type](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#MakingOrderType)|
 | l1ConfigVersion               |     Y       |integer       |Config Version|
 | l1OrderActive                 |     Y       |string       |L1 Order|
 | l1LadderDepth                 |     Y       |string       |Depth|
@@ -1205,8 +1205,8 @@ X-API-TOKEN:token（acquired from login）
 | tradeAnnexableSize            |    Y        |number       |Force Trade Volume|
 | l2LadderDepth                 |    Y        |string       |Depth|
 | l2PriceLimit                  |    Y        |number       |Price Limit|
-| l2Benchmark                   |    Y        |string       |[Benchmark](https://github.com/nexusbroc/nexus/api-en/enum.md#MakingDiffType)|
-| l2BenchmarkType               |    Y        |string       |[Benchmark Type](https://github.com/nexusbroc/nexus/api-en/enum.md#PriceAdjustType)|
+| l2Benchmark                   |    Y        |string       |[Benchmark](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#MakingDiffType)|
+| l2BenchmarkType               |    Y        |string       |[Benchmark Type](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#PriceAdjustType)|
 | l2DifferenceValue             |             |number       |Difference Value|
 | l2DifferencePercentage        |             |number       |Difference Percentage|
 | l2ThresholdValue              |             |number       |Threshold Value|
@@ -1327,8 +1327,8 @@ X-API-TOKEN:token（acquired from login）
 | volumeMinScale                |     Y       |integer      |Volume Min Scale|
 | volumeMaxScale                |     Y       |integer      |Volume Max Scale|
 | tickSize                      |     Y       |number       |Tick Size|
-| restriction                   |     Y       |string       |[Restriction](https://github.com/nexusbroc/nexus/api-en/enum.md#MakingRestriction)|
-| l1ConfigType                  |     Y       |string       |[ConfigT Type](https://github.com/nexusbroc/nexus/api-en/enum.md#MakingOrderType)|
+| restriction                   |     Y       |string       |[Restriction](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#MakingRestriction)|
+| l1ConfigType                  |     Y       |string       |[ConfigT Type](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#MakingOrderType)|
 | l1ConfigVersion               |     Y       |integer       |Config Version|
 | l1OrderActive                 |     Y       |string       |L1 Order|
 | l1LadderDepth                 |     Y       |string       |Depth|
@@ -1347,8 +1347,8 @@ X-API-TOKEN:token（acquired from login）
 | tradeAnnexableSize            |    Y        |number       |Force Trade Volume|
 | l2LadderDepth                 |    Y        |string       |Depth|
 | l2PriceLimit                  |    Y        |number       |Price Limit|
-| l2Benchmark                   |    Y        |string       |[Benchmark](https://github.com/nexusbroc/nexus/api-en/enum.md#MakingDiffType)|
-| l2BenchmarkType               |    Y        |string       |[Benchmark Type](https://github.com/nexusbroc/nexus/api-en/enum.md#PriceAdjustType)|
+| l2Benchmark                   |    Y        |string       |[Benchmark](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#MakingDiffType)|
+| l2BenchmarkType               |    Y        |string       |[Benchmark Type](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#PriceAdjustType)|
 | l2DifferenceValue             |             |number       |Difference Value|
 | l2DifferencePercentage        |             |number       |Difference Percentage|
 | l2ThresholdValue              |             |number       |Threshold Value|
@@ -1544,7 +1544,7 @@ X-API-TOKEN:token（acquired from login）
 | :---------------------------- | :---------- | :------------------------ |
 | cp                            |string       |cp|
 | symbol                        |string       |Symbol|
-| simulateType                  |string       |[Simulate Type](https://github.com/nexusbroc/nexus/api-en/enum.md#SimulateType)|
+| simulateType                  |string       |[Simulate Type](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#SimulateType)|
 | targetTime                    |number       |Target Time|
 | targetPrice                   |number       |Target Price|
 | startTime                     |number       |Start Time|
@@ -1604,7 +1604,7 @@ X-API-TOKEN:token（acquired from login）
 | :---------------------------- | :----------  | :---------- | :------------------------ |
 | cp                            |     Y        |string       |cp|
 | symbol                        |     Y        |string       |Symbol|
-| simulateType                  |     Y        |string       |[Simulate Type](https://github.com/nexusbroc/nexus/api-en/enum.md#SimulateType)|
+| simulateType                  |     Y        |string       |[Simulate Type](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#SimulateType)|
 | targetTime                    |     Y        |number       |Target Time|
 | targetPrice                   |     Y        |number       |Target Price|
 | startTime                     |              |number       |Start Time|
@@ -1706,7 +1706,7 @@ X-API-TOKEN:token（acquired from login）
 | :---------------------------- | :----------  | :---------- | :------------------------ |
 | cp                            |     Y        |string       |cp|
 | symbol                        |     Y        |string       |Symbol|
-| simulateType                  |     Y        |string       |[Simulate Type](https://github.com/nexusbroc/nexus/api-en/enum.md#SimulateType)|
+| simulateType                  |     Y        |string       |[Simulate Type](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#SimulateType)|
 | targetTime                    |     Y        |number       |Target Time|
 | targetPrice                   |     Y        |number       |Target Price|
 | startTime                     |              |number       |Start Time|

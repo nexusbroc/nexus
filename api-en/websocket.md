@@ -107,9 +107,9 @@ X-API-TOKEN:token(acquired from login）
 | cpOrderId     | integer | CP order ID        |
 | symbol        | string  | crypto pairs name  |
 | orderId       | integer | parent order ID    |
-| side          | string  | [BUY or SELL(Side)](https://github.com/nexusbroc/nexus/api-en/enum.md) |
-| status        | string  | [Order Status(OrderStatus)](https://github.com/nexusbroc/nexus/api-en/enum.md)       |
-| orderType     | string  | [Order Type(OrderType)](https://github.com/nexusbroc/nexus/api-en/enum.md)        |
+| side          | string  | [BUY or SELL(Side)](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md) |
+| status        | string  | [Order Status(OrderStatus)](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md)       |
+| orderType     | string  | [Order Type(OrderType)](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md)        |
 | executeAmount | number  | executed Amount    |
 | executeVolume | number  | executed Volume    |
 | orderVolume   | number  | order Volume       |
@@ -117,8 +117,8 @@ X-API-TOKEN:token(acquired from login）
 | executeTime   | integer | executed Time      |
 | orderTime     | integer | place order Time   |
 | commission    | number  | commission         |
-| timeInForce   | string  | [Time In Force(TimeInForce)](https://github.com/nexusbroc/nexus/api-en/enum.md)      |
-| orderResult   | string  | [Order Result(OrderResult)](https://github.com/nexusbroc/nexus/api-en/enum.md)       |
+| timeInForce   | string  | [Time In Force(TimeInForce)](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md)      |
+| orderResult   | string  | [Order Result(OrderResult)](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md)       |
 | orderComment  | string  | comments           |
 
   ***example of order trading result***

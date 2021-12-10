@@ -107,9 +107,9 @@ X-API-TOKEN:token(通过login获得）
 | symbol        | string  | 交易币对名称                                                                      |
 | accountId     | integer | 账户ID                                                                            |
 | orderId       | integer | 父订单                                                                            |
-| side          | string  | [买卖方向(Side)](https://github.com/nexusbroc/nexus/api-en/enum.md)        |
-| status        | string  | [状态(OrderStatus)](https://github.com/nexusbroc/nexus/api-en/enum.md)     |
-| orderType     | string  | [订单类型(OrderType)](https://github.com/nexusbroc/nexus/api-en/enum.md)   |
+| side          | string  | [买卖方向(Side)](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md)        |
+| status        | string  | [状态(OrderStatus)](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md)     |
+| orderType     | string  | [订单类型(OrderType)](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md)   |
 | executeAmount | number  | 成交金额                                                                          |
 | executeVolume | number  | 成交数量                                                                          |
 | orderVolume   | number  | 订单数量                                                                          |
@@ -117,8 +117,8 @@ X-API-TOKEN:token(通过login获得）
 | executeTime   | integer | 成交时间                                                                          |
 | orderTime     | integer | 订单时间                                                                          |
 | commission    | number  | 手续费                                                                            |
-| timeInForce   | string  | [过期类型(TimeInForce)](https://github.com/nexusbroc/nexus/api-en/enum.md) |
-| orderResult   | string  | [结果(OrderResult)](https://github.com/nexusbroc/nexus/api-en/enum.md)     |
+| timeInForce   | string  | [过期类型(TimeInForce)](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md) |
+| orderResult   | string  | [结果(OrderResult)](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md)     |
 | orderComment  | string  | 备注                                                                              |
 
   ***订单成交结果推送返回参数示例***
