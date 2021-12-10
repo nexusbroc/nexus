@@ -2,9 +2,9 @@
 
 
 - API url 
-    test environment：https://uat.smartcrypto.cc:444/     
+    test environment：https://demo.go-nexus.io:444/     
 - API test tools  
-    test environment：https://uat.smartcrypto.cc:444/swagger-ui.html 
+    test environment：https://demo.go-nexus.io:444/swagger-ui.html 
 
 ## API LIST
 
@@ -52,7 +52,7 @@ POST /api/v1/operator/login
 ```
 {
   "data": {
-    "token": "ZElHYkFsRktuZDduUG1udzI2V1lldyIsImFsZyI6IkEyNTZHQ01LVyIsIml2IjoicjZzLU83TGlYTUFYVEVxeSJ9.92p5FlhYwx6YCLeUlh-rlE3o_8.-wL8D1uL3GEEE3kj.qmBbSsSy92nYBt4WOLbU5MCH1NPbXO6k6_b5uGEG63xcQJ-Ny9K1VCMRtChQRol6l6fb5rNobNnOFAgeYzy2cqkje4HgUlL3BSRNlDj7G6W-60MwM2af7U2xshESv8LqLux2GZxPzCBmJz__HgluDxJwX2qNsMvOjM5k7Ckce8E1vHRJA18pkMzAL41HMFyzaf67Mp2SgXIaFHXVKVxdsOI.Gi2YOwudddsfdsafdsafa"
+    "token": "ZElHYkFsRktuZDduUG1udzI2V1lldyIsImFsZyI6IkEyNTZHQ01LVyIsIml2IjoicjZzLU83TGlYTUFYVEVxeSJ9.92p5FlhYwx6YCLeUlh-rlE3o_8.-wL8D1uL3GEEE3kj.qmBbSsSy92nYBt4WOLbU5MCH1NPbXO6k6_b5uGEG63xcQJ-Ny9K1VCMRtChQRol6l6fb5rNobNnOFAgeYzy2cqkje4HgUlL3BSRNlDj7G6W-60MwM2af7U2xshESv8LqLux2GZxPzCBmJz__HgluDxJwX2qNsMvOjM5k7Ckce8E1vHRJA18pkMzAL41HMFyzaf67Mp2SgXIaFHXVKVxd32132"
   },
   "result": "SUCCESS",
   "type": "API"
@@ -72,9 +72,9 @@ X-API-TOKEN:token（acquired from login）
 | :------------- | :------ | :------- |
 | name           | string  | name |
 | tradingEnabled | boolean | trading constraints |
+| type           | string  | [Cp Type(LpType)](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#LpType)        | 
 
 ***example of return***
-
 ```
 {
   "data": [
@@ -220,7 +220,7 @@ RequestBody:（order）
 | executeVolume | number     | executed Volume              |
 | orderVolume   | number     | order Volume              |
 | pendingVolume | number     | pending Volume              |
-| side          | string     | [BUY or SELL(Side)](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#side)]       |
+| side          | string     | [BUY or SELL(Side)](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#side)       |
 | orderType     | string     | [Order Type(OrderType)](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#ordertype)  |
 | status        | string     | [Order Status(OrderStatus)](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#orderstatus)     |
 | timeInForce   | string     | [Time InForce(TimeInForce)](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md#timeinforce) |
