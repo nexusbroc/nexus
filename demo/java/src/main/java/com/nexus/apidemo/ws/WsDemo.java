@@ -19,10 +19,19 @@ public class WsDemo {
 		WebSocketContainer container = ContainerProvider.getWebSocketContainer();
 		URI r = URI.create(uri + token);
 		Session session = container.connectToServer(WsDemoEndpoint.class, r);
-		// Quote推送
-		session.getBasicRemote().sendText("subscribe:apiQuote:65537");
-		// 交易结果推送
-		session.getBasicRemote().sendText("subscribe:apiOrder");
+
+		// SUBSCRIBE API_MARKETDEPTH
+		session.getBasicRemote().sendText("{\"id\":\"1639121062583\",\"action\":\"SUBSCRIBE\",\"event\":\"API_MARKETDEPTH\",\"symbol\":\"BTCUSDT\",\"depth\":5}");
+
+		// SUBSCRIBE API_ORDER
+		session.getBasicRemote().sendText("{\"id\":\"1630055515109\",\"action\":\"SUBSCRIBE\",\"event\":\"API_ORDER\"}");
+
+		// SUBSCRIBE API_RISK_POSITION
+		session.getBasicRemote().sendText("{\"id\":\"1630055515109\",\"action\":\"SUBSCRIBE\",\"event\":\"API_RISK_POSITION\",\"symbol\":\"ALL\",\"book\":\"A\"}");
+
+
+		// UNSUBSCRIBE
+		//session.getBasicRemote().sendText("{\"id\":\"1639121062583\",\"action\":\"UNSUBSCRIBE\",\"event\":\"API_MARKETDEPTH\",\"symbol\":\"BTCUSDT\"}");
 
 		Thread.sleep(Long.MAX_VALUE);
 	}

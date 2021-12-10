@@ -12,13 +12,13 @@
 
 | request                                                                   | description                                                    |
 |:--------------------------------------------------------------------------|:---------------------------------------------------------------|
-| [subscribe:API_ORDER](#subscribe-order)                     | subscribe order trading result                                 |
-| [unsubscribe:API_ORDER](#subscribe-order)                   | unsubscribe order trading result                               |
+| [subscribe:API_ORDER](#subscribe-order)                | subscribe order trading result                                 |
+| [unsubscribe:API_ORDER](#subscribe-order)              | unsubscribe order trading result                               |
 | [subscribe:API_MARKETDEPTH](#subscribe-market-depth)   | subscribe aggregation quotation    (symbol:crypto pairs name)  |
 | [unsubscribe:API_MARKETDEPTH](#subscribe-market-depth) | unsubscribe aggregation quotation   (symbol:crypto pairs name) |
-| [subscribe:API_RISK_POSITION](#subscribe-risk-position)                     | subscribe risk    (symbol:crypto pairs name book: book abbreviation)                    |
-| [unsubscribe:API_RISK_POSITION](#subscribe-risk-position)                   | unsubscribe risk   (symbol:crypto pairs name book: book abbreviation)                   |
-| [ping](#ping)                                                                    | heart beat                                                     |
+| [subscribe:API_RISK_POSITION](#subscribe-risk-position)    | subscribe risk    (symbol:crypto pairs name book: book abbreviation)                    |
+| [unsubscribe:API_RISK_POSITION](#subscribe-risk-position)  | unsubscribe risk   (symbol:crypto pairs name book: book abbreviation)                   |
+| [ping](#ping)                                              | heart beat                                                     |
 
 
 ## WEBSOCKET API for creating connection
@@ -61,26 +61,62 @@ X-API-TOKEN:token(acquired from login）
 
 ```
  {
-    "event": "API_MARKETDEPTH",
-    "data": {
-        "asks": [
-            {
-                "cp": "b2c2",
-                "price": "48694.00",
-                "time": "1631948616845",
-                "volume": "19.0000"
-            }
-        ],
-        "bids": [
-            {
-                "cp": "b2c2",
-                "price": "48614.00",
-                "time": "1631948616845",
-                "volume": "19.0000"
-            }
-        ],
-        "symbol": "BTCUSDT"
-    }
+	"event": "API_MARKETDEPTH",
+	"data": {
+		"asks": [{
+			"cp": "huobi",
+			"price": "47914.06",
+			"time": "1639122261862",
+			"volume": "0.0001"
+		}, {
+			"cp": "bitmart",
+			"price": "47916.05",
+			"time": "1639122262424",
+			"volume": "0.0155"
+		}, {
+			"cp": "huobi",
+			"price": "47916.46",
+			"time": "1639122261862",
+			"volume": "0.0054"
+		}, {
+			"cp": "huobi",
+			"price": "47916.49",
+			"time": "1639122261862",
+			"volume": "0.0001"
+		}, {
+			"cp": "huobi",
+			"price": "47916.50",
+			"time": "1639122261862",
+			"volume": "0.0001"
+		}],
+		"bids": [{
+			"cp": "xs_mm",
+			"price": "54220.43",
+			"time": "1639122262256",
+			"volume": "1.5683"
+		}, {
+			"cp": "xs_hedge",
+			"price": "54220.43",
+			"time": "1639122262219",
+			"volume": "1.5683"
+		}, {
+			"cp": "xs_hedge",
+			"price": "54214.97",
+			"time": "1639122262219",
+			"volume": "0.7222"
+		}, {
+			"cp": "xs_hedge",
+			"price": "54213.82",
+			"time": "1639122262219",
+			"volume": "0.3504"
+		}, {
+			"cp": "xs_hedge",
+			"price": "54212.24",
+			"time": "1639122262219",
+			"volume": "0.0770"
+		}],
+		"symbol": "BTCUSDT"
+	}
 }
 ```
 
