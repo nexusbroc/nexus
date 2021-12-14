@@ -6,7 +6,7 @@ REST，即Representational State Transfer的缩写，是目前最流行的一种
 - API访问地址
     测试环境：https://demo.go-nexus.io/     
 - API测试工具
-    测试环境：https://demo.go-nexus.io/swagger/swagger-ui.html
+    测试环境：https://demo.go-nexus.io/swagger-ui.html 
 
 ## 接口列表
 a
