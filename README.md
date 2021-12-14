@@ -10,12 +10,12 @@ nexus为用户提供了一整套简单而又强大的开发工具，旨在帮助
 | Name                                                         | Description                                               |
 | ------------------------------------------------------------ | --------------------------------------------------------- |
 | [rest-api.md](https://github.com/nexusbroc/nexus/blob/main/api-cn/restful-api.md) | Rest Api 接口文档                            |
-| [web-socket-streams.md](https://github.com/nexusbroc/nexus/blob/main/api-cn/websocket.md) | Websocket 接口文档                 |
+| [web-socket-streams.md](https://github.com/nexusbroc/nexus/blob/main/api-cn/websocket.md) | Websokcet 接口文档                 |
 | [enum.md](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md) |  Enum                 |
 
 English    
 | Name                                                         | Description                                               |
 | ------------------------------------------------------------ | --------------------------------------------------------- |
 | [rest-api.md](https://github.com/nexusbroc/nexus/blob/main/api-en/restful-api.md) | Rest Api                             |
-| [web-socket-streams.md](https://github.com/nexusbroc/nexus/blob/main/api-en/websocket.md) | Websocket                  |
+| [web-socket-streams.md](https://github.com/nexusbroc/nexus/blob/main/api-en/websocket.md) | Websokcet                  |
 | [enum.md](https://github.com/nexusbroc/nexus/blob/main/api-en/enum.md) |  Enum                 |

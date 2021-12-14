@@ -1,5 +1,5 @@
 package com.nexus.apidemo.common;
 
 public interface Consts {
-	String HOST = "frodo.nextop.cn:444";
+	String HOST = "demo.go-nexus.io";
 }

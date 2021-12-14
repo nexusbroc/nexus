@@ -2,9 +2,9 @@
 
 
 - API url 
-    test environment：https://demo.go-nexus.io:444/     
+    test environment：https://demo.go-nexus.io/     
 - API test tools  
-    test environment：https://demo.go-nexus.io:444/swagger-ui.html 
+    test environment：https://demo.go-nexus.io/swagger-ui.html 
 
 ## API LIST
 

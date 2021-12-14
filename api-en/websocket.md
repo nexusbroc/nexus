@@ -2,7 +2,7 @@
 
 
 - Websocket url: 
-    test environment：wss://demo.go-nexus.io:444    
+    test environment：wss://demo.go-nexus.io    
 - Websocket request ,login required。
 - when connection is created,  login required, then can subscribe and unsubscribe
 - when connection is created,  required to send regular-'ping' to keep it alive. period:30 minutes.
