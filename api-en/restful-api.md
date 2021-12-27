@@ -963,7 +963,7 @@ X-API-TOKEN:token（acquired from login）
 ```
 
 
-### get-making-config
+### get making config
 GET /api/v1/making/makingConfigs
 
 request with Headers:
@@ -1166,7 +1166,7 @@ X-API-TOKEN:token（acquired from login）
 ```
 
 
-### add-making-config
+### add making config
 POST /api/v1/making/makingConfigs/create
 
 request with Headers:
@@ -1307,7 +1307,7 @@ X-API-TOKEN:token（acquired from login）
 
 
 
-### update-making-config
+### update making config
 PUT /api/v1/making/makingConfigs/update
 
 request with Headers:
@@ -1458,7 +1458,7 @@ X-API-TOKEN:token（acquired from login）
 
 
 
-### delete-making-config
+### delete making config
 DELETE /api/v1/making/makingConfigs/delete
 
 request with Headers:
@@ -1525,7 +1525,7 @@ X-API-TOKEN:token（acquired from login）
 
 
 
-### get-target-price-config
+### get target price config
 GET /api/v1/making/targetPriceConfigs
 
 request with Headers:
@@ -1592,7 +1592,7 @@ X-API-TOKEN:token（acquired from login）
 ```
 
 
-### add-target-price-config
+### add target price config
 POST /api/v1/making/targetPriceConfigs/create
 
 request with Headers:
@@ -1692,7 +1692,7 @@ X-API-TOKEN:token（acquired from login）
 
 
 
-### update-target-price-config
+### update target price config
 
 ###### PUT /api/v1/making/targetPriceConfigs/update
 
@@ -1786,7 +1786,7 @@ X-API-TOKEN:token（acquired from login）
 
 
 
-### delete-target-price-config
+### delete target price config
 DELETE /api/v1/making/targetPriceConfigs/delete
 
 request with Headers:
