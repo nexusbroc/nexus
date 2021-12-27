@@ -43,6 +43,8 @@ X-API-TOKEN:token(acquired from login）
 | request                     | description                      |
 |:----------------------------|:---------------------------------|
 | ID |  |
+| ACTION | subscribe/unsubscribe |
+| EVENT | event type |
 | SYMBOL   | subscribe crypto pairs name   |
 | DEPTH | crypto pairs name depth |
 
@@ -134,6 +136,8 @@ X-API-TOKEN:token(acquired from login）
 | request              | description                      |
 |:---------------------|:---------------------------------|
 | ID |  |
+| ACTION | subscribe/unsubscribe |
+| EVENT | event type |
 
  ***params of order trading result***
 
@@ -231,6 +235,9 @@ X-API-TOKEN:token(acquired from login）
 
 | request                              | description                                 |
 |:-------------------------------------|:--------------------------------------------|
+| ID |  |
+| ACTION | subscribe/unsubscribe |
+| EVENT | event type |
 | SYMBOL   | subscribe crypto pairs name   |
 | BOOK | book abbreviation |
 
@@ -279,3 +286,9 @@ X-API-TOKEN:token(acquired from login）
 	"event": ""
 }
 ```
+
+| request                              | description                                 |
+|:-------------------------------------|:--------------------------------------------|
+| ID |  |
+| ACTION | action |
+| EVENT | event type |

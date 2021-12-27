@@ -28,10 +28,10 @@ a
 | [/api/v1/making/makingConfigs/create](#新增做市配置)  | POST  | 新增做市配置         |
 | [/api/v1/making/makingConfigs/update](#修改做市配置)  | PUT  | 修改做市配置         |
 | [/api/v1/making/makingConfigs/delete](#删除做市配置)  | DELETE  | 删除做市配置         |
-| [/api/v1/making/targetPriceConfigs](#get-target-price-config)  | GET  | 获取目标价格配置配置         |
-| [/api/v1/making/targetPriceConfigs/create](#add-target-price-config)  | PUT  | 添加目标价格配置配置         |
-| [/api/v1/making/targetPriceConfigs/update](#update-target-price-config)  | POST  | 更新目标价格配置配置         |
-| [/api/v1/making/targetPriceConfigs/delete](#delete-target-price-config)  | DELETE  | 删除目标价格配置         |
+| [/api/v1/making/targetPriceConfigs](#获取目标价格配置配置)  | GET  | 获取目标价格配置配置         |
+| [/api/v1/making/targetPriceConfigs/create](#添加目标价格配置配置)  | PUT  | 添加目标价格配置配置         |
+| [/api/v1/making/targetPriceConfigs/update](#更新目标价格配置配置)  | POST  | 更新目标价格配置配置         |
+| [/api/v1/making/targetPriceConfigs/delete](#删除目标价格配置)  | DELETE  | 删除目标价格配置         |
 
 ## Restful API
 ### 登陆接口
@@ -929,7 +929,7 @@ X-API-TOKEN:token（通过login获得）
 
 
 
-### get-making-config
+### 获取做市配置
 GET /api/v1/making/makingConfigs
 
 request with Headers:
@@ -1131,7 +1131,7 @@ X-API-TOKEN:token（acquired from login）
 ```
 
 
-### add-making-config
+### 新增做市配置
 POST /api/v1/making/makingConfigs/create
 
 request with Headers:
@@ -1274,7 +1274,7 @@ X-API-TOKEN:token（acquired from login）
 
 
 
-### update-making-config
+### 修改做市配置
 PUT /api/v1/making/makingConfigs/update
 
 request with Headers:
@@ -1425,7 +1425,7 @@ X-API-TOKEN:token（acquired from login）
 
 
 
-### delete-making-config
+### 删除做市配置
 DELETE /api/v1/making/makingConfigs/delete
 
 request with Headers:
@@ -1493,7 +1493,7 @@ X-API-TOKEN:token（acquired from login）
 
 
 
-### get-target-price-config
+### 获取目标价格配置配置
 GET /api/v1/making/targetPriceConfigs
 
 request with Headers:
@@ -1560,7 +1560,7 @@ X-API-TOKEN:token（acquired from login）
 ```
 
 
-### add-target-price-config
+### 添加目标价格配置配置
 POST /api/v1/making/targetPriceConfigs/create
 
 request with Headers:
@@ -1661,7 +1661,7 @@ X-API-TOKEN:token（acquired from login）
 
 
 
-### update-target-price-config
+### 更新目标价格配置配置
 
 ###### PUT /api/v1/making/targetPriceConfigs/update
 
@@ -1755,7 +1755,7 @@ X-API-TOKEN:token（acquired from login）
 
 
 
-### delete-target-price-config
+### 删除目标价格配置
 DELETE /api/v1/making/targetPriceConfigs/delete
 
 request with Headers:
