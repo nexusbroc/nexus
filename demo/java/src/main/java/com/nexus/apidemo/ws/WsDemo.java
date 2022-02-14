@@ -21,14 +21,13 @@ public class WsDemo {
 		Session session = container.connectToServer(WsDemoEndpoint.class, r);
 
 		// SUBSCRIBE API_MARKETDEPTH
-		//session.getBasicRemote().sendText("{\"id\":\"1639121062583\",\"action\":\"SUBSCRIBE\",\"event\":\"API_MARKETDEPTH\",\"symbol\":\"BTCUSDT\",\"depth\":5}");
+		session.getBasicRemote().sendText("{\"id\":\"1639121062583\",\"action\":\"SUBSCRIBE\",\"event\":\"API_MARKETDEPTH\",\"symbol\":\"BTCUSDT\",\"depth\":5}");
 
 		// SUBSCRIBE API_ORDER
-		//session.getBasicRemote().sendText("{\"id\":\"1630055515109\",\"action\":\"SUBSCRIBE\",\"event\":\"API_ORDER\"}");
+		session.getBasicRemote().sendText("{\"id\":\"1630055515109\",\"action\":\"SUBSCRIBE\",\"event\":\"API_ORDER\"}");
 
 		// SUBSCRIBE API_RISK_POSITION
 		session.getBasicRemote().sendText("{\"id\":\"1630055515109\",\"action\":\"SUBSCRIBE\",\"event\":\"API_RISK_POSITION\",\"symbol\":\"ALL\",\"book\":\"A\"}");
-
 
 		// UNSUBSCRIBE
 		//session.getBasicRemote().sendText("{\"id\":\"1639121062583\",\"action\":\"UNSUBSCRIBE\",\"event\":\"API_MARKETDEPTH\",\"symbol\":\"BTCUSDT\"}");
