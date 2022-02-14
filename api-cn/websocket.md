@@ -251,6 +251,15 @@ X-API-TOKEN:token(通过login获得）
 | openAmount | string | 净头寸                  |
 | openVolume | string | 金额                    |
 | symbol     | string | 币对名称                |
+| amount     | string |                 |
+| dailyAmount| string | 当日交易金额      |
+| dailyVolume| string | 当日交易量        |
+| grossAmount| string | 交易金额          |
+| hedgePl| string | 已实现对冲损益           |
+| hedgeVolume| string | 已实现对冲数量       |
+| mtmAmount| string |盯市交易金额          |
+| netPl| string |已实现Net损益                 |
+| netVolume| string |Net数量                 |
 
 
  ***风控推送返回参数示例***

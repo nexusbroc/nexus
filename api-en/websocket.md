@@ -252,7 +252,15 @@ X-API-TOKEN:token(acquired from login）
 | openAmount | string | open amount               |
 | openVolume | string | open volume               |
 | symbol     | string | crypto pair name          |
-
+| amount     | string | amount                |
+| dailyAmount| string | daily amount      |
+| dailyVolume| string | daily volume        |
+| grossAmount| string | gross amount          |
+| hedgePl| string | hedge pl           |
+| hedgeVolume| string | hedge volume       |
+| mtmAmount| string |mtm amount          |
+| netPl| string |net pl                |
+| netVolume| string |net volume                 |
 
 
  ***example of return***
