@@ -1975,10 +1975,10 @@ X-API-TOKEN:token（acquired from login）
 
 ***request params***
 
-| NAME   | TYPE        | DESCRIBE                  |
-|:-------| :---------- | :------------------------ |
-| cp     |     Y       |string       |cp|
-| symbol |     Y       |string       |symbol| 
+| NAME         | REQUIRED | TYPE   | DESCRIBE | DEFAULT | VALUES RANGE |
+|:-------------|:---------| :----- |:---------| :------ | :----------- |
+| cp         | Y        | string | cp       |         |              |
+| symbol     | Y        | string | symbol       |         |              |
 
 ***params of return***
 
@@ -2043,11 +2043,11 @@ X-API-TOKEN:token（acquired from login）
 
 ***request params***
 
-| NAME       | TYPE        | DESCRIBE |
-|:-----------| :---------- |:---------|
-| cp         |     Y       | string   |cp|
-| symbol     |     Y       | string   |symbol| 
-| aggressive |     Y       | bool     |aggressive| 
+| NAME         | REQUIRED | TYPE   | DESCRIBE | DEFAULT | VALUES RANGE |
+|:-------------|:---------| :----- |:---------| :------ | :----------- |
+| cp         | Y        | string | cp    |         |              |
+| symbol     | Y        | string | symbol      |         |              |
+| aggressive     | Y        | string | aggressive      |         |              |
  
 ***params of return***
 

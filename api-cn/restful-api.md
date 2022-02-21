@@ -1942,11 +1942,10 @@ X-API-TOKEN:token（通过login获得）
 
 ***请求参数***
 
-| NAME                          | TYPE        | DESCRIBE                  |
-| :---------------------------- | :---------- | :------------------------ |
-| cp                            |     Y       |string       |交易对手|
-| symbol                        |     Y       |string       |币对| 
-
+| NAME         | REQUIRED | TYPE   | DESCRIBE | DEFAULT | VALUES RANGE |
+|:-------------|:---------| :----- |:---------| :------ | :----------- |
+| cp         | Y        | string | 交易对手    |         |              |
+| symbol     | Y        | string | 币对      |         |              |
 
 ***返回参数***
 
@@ -2011,13 +2010,11 @@ PUT /api/v1/making/makingConfigs/stop
 X-API-TOKEN:token（通过login获得）
 
 ***请求参数***
-
-| NAME       | TYPE        | DESCRIBE |
-|:-----------| :---------- |:---------|
-| cp         |     Y       | string   |交易对手|
-| symbol     |     Y       | string   |币对| 
-| aggressive |     Y       | bool     |强制取消所有订单| 
-
+| NAME         | REQUIRED | TYPE   | DESCRIBE | DEFAULT | VALUES RANGE |
+|:-------------|:---------| :----- |:---------| :------ | :----------- |
+| cp         | Y        | string | 交易对手    |         |              |
+| symbol     | Y        | string | 币对      |         |              |
+| aggressive     | Y        | string | 强制取消所有订单      |         |              |
 
 ***返回参数***
 
