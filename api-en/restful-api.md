@@ -8,28 +8,33 @@
 
 ## API LIST
 
-| request                                    | type | description                   |
-| :------------------------------------------ | :--- | :--------------------- |
-| [/api/v1/operator/login](#login)                   | POST | login                   |
-| [/api/v1/market/cps](#get-counter-party-list)                       | GET  | get counter party list          |
-| [/api/v1/market/symbols](#get-crypto-pairs-list)                   | GET  | get crypto pairs list       |
-| [/api/v1/trades/place](#place-order)                     | POST | place orders (SOR)               |
-| [/api/v1/trades/orderDetail](#get-detail-of-orders)               | GET  | get  detail of orders         |
-| [/api/v1/trades/clientOrderDetail](#get-detail-of-client-Orders)               | GET  | get  detail  of client orders         |
-| [/api/v1/trades/orderHistory](#get-history-list-of-orders)              | GET  | get history  list of orders   |
-| [/api/v1/trades/cpOrderHistory](#get-CP-history-list-of-placed-orders)            | GET  | get CP history list of placed orders |
-| [/api/v1/trades/cpExecutionHistory](#get-CP-history-list-of-executed-orders)        | GET  | get CP history list of executed orders |
-| [/api/v1/trades/cpExecutionsByCpOrderId](#get-CP-detail-of-executed-order)         | GET  | get CP detail of executed orders         |
-| [/api/v1/trades/cpExecutionsByOrderId](#get-CP-detail-of-executed-order)         | GET  | get CP detail of executed orders         |
-| [/api/v1/market/cpAccountInfo](#get-account-info)             | GET  | get account info         |
-| [/api/v1/making/makingConfigs](#get-making-config)  | GET  | get making config         |
-| [/api/v1/making/makingConfigs/create](#add-making-config)  | PUT  | add making config         |
-| [/api/v1/making/makingConfigs/update](#update-making-config)  | POST  | update making config         |
-| [/api/v1/making/makingConfigs/delete](#delete-making-config)  | DELETE  | delete making config         |
-| [/api/v1/making/targetPriceConfigs](#get-target-price-config)  | GET  | get target price config         |
-| [/api/v1/making/targetPriceConfigs/create](#add-target-price-config)  | PUT  | add target price config         |
-| [/api/v1/making/targetPriceConfigs/update](#update-target-price-config)  | POST  | update target price config         |
-| [/api/v1/making/targetPriceConfigs/delete](#delete-target-price-config)  | DELETE  | delete target price config         |
+| request                                                                      | type | description                            |
+|:-----------------------------------------------------------------------------| :--- |:---------------------------------------|
+| [/api/v1/operator/login](#login)                                             | POST | login                                  |
+| [/api/v1/market/cps](#get-counter-party-list)                                | GET  | get counter party list                 |
+| [/api/v1/market/symbols](#get-crypto-pairs-list)                             | GET  | get crypto pairs list                  |
+| [/api/v1/trades/place](#place-order)                                         | POST | place orders (SOR)                     |
+| [/api/v1/trades/orderDetail](#get-detail-of-orders)                          | GET  | get  detail of orders                  |
+| [/api/v1/trades/clientOrderDetail](#get-detail-of-client-Orders)             | GET  | get  detail  of client orders          |
+| [/api/v1/trades/orderHistory](#get-history-list-of-orders)                   | GET  | get history  list of orders            |
+| [/api/v1/trades/cpOrderHistory](#get-CP-history-list-of-placed-orders)       | GET  | get CP history list of placed orders   |
+| [/api/v1/trades/cpExecutionHistory](#get-CP-history-list-of-executed-orders) | GET  | get CP history list of executed orders |
+| [/api/v1/trades/cpExecutionsByCpOrderId](#get-CP-detail-of-executed-order)   | GET  | get CP detail of executed orders       |
+| [/api/v1/trades/cpExecutionsByOrderId](#get-CP-detail-of-executed-order)     | GET  | get CP detail of executed orders       |
+| [/api/v1/market/cpAccountInfo](#get-account-info)                            | GET  | get account info                       |
+| [/api/v1/making/makingConfigs](#get-making-config)                           | GET  | get making config                      |
+| [/api/v1/making/makingConfigs/create](#add-making-config)                    | PUT  | add making config                      |
+| [/api/v1/making/makingConfigs/update](#update-making-config)                 | POST  | update making config                   |
+| [/api/v1/making/makingConfigs/delete](#delete-making-config)                 | DELETE  | delete making config                   |
+| [/api/v1/making/makingConfigs/pause](#pause-making-config)                   | PUT  | pause making config                    |
+| [/api/v1/making/makingConfigs/stop](#stop-making-config)                     | PUT  | stop making config                     |
+| [/api/v1/making/targetPriceConfigs](#get-target-price-config)                | GET  | get target price config                |
+| [/api/v1/making/targetPriceConfigs/create](#add-target-price-config)         | PUT  | add target price config                |
+| [/api/v1/making/targetPriceConfigs/update](#update-target-price-config)      | POST  | update target price config             |
+| [/api/v1/making/targetPriceConfigs/delete](#delete-target-price-config)      | DELETE  | delete target price config             |
+| [/api/v1/risk/books](#get-book)                                              | GET  | get book                               |
+| [/api/v1/risk/positions](#get—positions)                                     | GET  | get positions                          |
+
 ## Restful API
 ### login
 POST /api/v1/operator/login
@@ -1831,6 +1836,252 @@ X-API-TOKEN:token（acquired from login）
 ```
 {
   "result": "UNAUTHORIZED",
+  "type": "API"
+}
+```
+
+###### Version does not match：
+```
+{
+  "result": "STALE_VERSION",
+  "type": "API"
+}
+```
+
+###### Executing error：
+```
+{
+  "result": "INTERNAL_ERROR",
+  "type": "API"
+}
+```
+
+
+### get-book
+GET /api/v1/risk/books
+
+request with Headers:
+
+X-API-TOKEN:token（acquired from login）
+
+***params of return***
+
+| NAME           | TYPE    | DESCRIBE  |
+| :------------- | :------ |:----------|
+| name           | string  | BOOK name |
+
+***example of return***
+
+```
+{
+  "data": [
+    {
+      "name": "C"
+    },
+    {
+      "name": "D"
+    },
+    {
+      "name": "B"
+    }
+  ],
+  "result": "SUCCESS",
+  "type": "API"
+}
+```
+
+
+### get—positions
+GET /api/v1/risk/positions
+
+request with Headers:
+
+X-API-TOKEN:token（acquired from login）
+
+***request params***
+
+| NAME         | REQUIRED | TYPE   | DESCRIBE | DEFAULT | VALUES RANGE |
+|:-------------|:---------| :----- |:---------| :------ | :----------- |
+| book         | Y        | string | book     |         |              |
+| currency     | Y        | string | currency       |         |              |
+
+***params of return***
+
+| NAME  | TYPE   | DESCRIBE     |
+| :---- | :----- |:-------------|
+| book | string | book         |
+| amount | string | amount       |
+| broker | string | broker       |
+| dailyAmount | string | daily amount |
+| dailyVolume | string | daily volume |
+| grossAmount | string | gross amount |
+| hedgePl | string | hedge pl     |
+| hedgeVolume | string | hedge volume |
+| mtmAmount | string | mtm amount   |
+| netPl | string | net pl       |
+| netVolume | string | net volume   |
+| symbol | string | symbol       |
+| volume | string | volume       |
+
+***example of return***
+
+```
+{
+  "data": [
+    {
+      "amount": "-24.965755970000",
+      "book": "D",
+      "broker": "BT",
+      "dailyAmount": "0.000000000000",
+      "dailyVolume": "0.000000000000",
+      "grossAmount": "-23.894555580000",
+      "hedgePl": "0.000000000000",
+      "hedgeVolume": "0.000000000000",
+      "mtmAmount": "-104.157200000000",
+      "netPl": "0.000000000000",
+      "netVolume": "0.000000000000",
+      "symbol": "ETHUSDT",
+      "volume": "0.040000000000"
+    },
+    {
+      "amount": "-278.923365370000",
+      "book": "D",
+      "broker": "BT",
+      "dailyAmount": "0.000000000000",
+      "dailyVolume": "0.000000000000",
+      "grossAmount": "-279.317741740000",
+      "hedgePl": "0.000000000000",
+      "hedgeVolume": "0.000000000000",
+      "mtmAmount": "-475.553459990400",
+      "netPl": "0.000000000000",
+      "netVolume": "0.000000000000",
+      "symbol": "BTCUSDT",
+      "volume": "0.014572760000"
+    }
+  ],
+  "result": "SUCCESS",
+  "type": "API"
+}
+```
+
+
+
+### pause-making-config
+PUT /api/v1/making/makingConfigs/pause
+
+request with Headers:
+
+X-API-TOKEN:token（acquired from login）
+
+***request params***
+
+| NAME   | TYPE        | DESCRIBE                  |
+|:-------| :---------- | :------------------------ |
+| cp     |     Y       |string       |cp|
+| symbol |     Y       |string       |symbol| 
+
+***params of return***
+
+| NAME                 | TYPE       | DESCRIBE                                                                         |
+| :------------------- | :--------- | :------------------------------------------------------------------------------- |   
+| result               | string     | 'SUCCESS' or 'INVALID_DATA' or 'REJECTED' or 'STALE_VERSION' or 'INTERNAL_ERROR' |
+| type                 | string     | 'API'                                                                            |
+
+
+***example of return***
+
+###### Execute success：
+```
+{
+  "result": "SUCCESS",
+  "type": "API"
+}
+```
+
+###### Parameter validate fail：
+```
+{
+  "result": "INVALID_DATA",
+  "type": "API",
+  "validations": {
+    "basic.cp": "INVALID"
+  }
+}
+```
+
+###### Target config not exist, reject update：
+```
+{
+  "result": "REJECTED",
+  "type": "API"
+}
+```
+
+###### Version does not match：
+```
+{
+  "result": "STALE_VERSION",
+  "type": "API"
+}
+```
+
+###### Executing error：
+```
+{
+  "result": "INTERNAL_ERROR",
+  "type": "API"
+}
+```
+
+
+### stop-making-config
+PUT /api/v1/making/makingConfigs/stop
+
+request with Headers:
+
+X-API-TOKEN:token（acquired from login）
+
+***request params***
+
+| NAME       | TYPE        | DESCRIBE |
+|:-----------| :---------- |:---------|
+| cp         |     Y       | string   |cp|
+| symbol     |     Y       | string   |symbol| 
+| aggressive |     Y       | bool     |aggressive| 
+ 
+***params of return***
+
+| NAME                 | TYPE       | DESCRIBE                                                                         |
+| :------------------- | :--------- | :------------------------------------------------------------------------------- |   
+| result               | string     | 'SUCCESS' or 'INVALID_DATA' or 'REJECTED' or 'STALE_VERSION' or 'INTERNAL_ERROR' |
+| type                 | string     | 'API'                                                                            |
+
+
+***example of return***
+
+###### Execute success：
+```
+{
+  "result": "SUCCESS",
+  "type": "API"
+}
+```
+
+###### Parameter validate fail：
+```
+{
+  "result": "INVALID_DATA",
+  "type": "API",
+  "validations": {
+    "basic.cp": "INVALID"
+  }
+}
+```
+
+###### Target config not exist, reject update：
+```
+{
+  "result": "REJECTED",
   "type": "API"
 }
 ```

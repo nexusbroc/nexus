@@ -28,10 +28,14 @@ a
 | [/api/v1/making/makingConfigs/create](#新增做市配置)  | POST  | 新增做市配置         |
 | [/api/v1/making/makingConfigs/update](#修改做市配置)  | PUT  | 修改做市配置         |
 | [/api/v1/making/makingConfigs/delete](#删除做市配置)  | DELETE  | 删除做市配置         |
+| [/api/v1/making/makingConfigs/pause](#暂停做市)  | PUT  | 暂停做市         |
+| [/api/v1/making/makingConfigs/stop](#停止做市)  | PUT  | 停止做市         |
 | [/api/v1/making/targetPriceConfigs](#获取目标价格配置配置)  | GET  | 获取目标价格配置配置         |
 | [/api/v1/making/targetPriceConfigs/create](#添加目标价格配置配置)  | PUT  | 添加目标价格配置配置         |
 | [/api/v1/making/targetPriceConfigs/update](#更新目标价格配置配置)  | POST  | 更新目标价格配置配置         |
 | [/api/v1/making/targetPriceConfigs/delete](#删除目标价格配置)  | DELETE  | 删除目标价格配置         |
+| [/api/v1/risk/books](#获取BOOK)  | GET  | 获取BOOK         |
+| [/api/v1/risk/positions](#获取风控信息)  | GET  | 获取风控信息         |
 
 ## Restful API
 ### 登陆接口
@@ -1800,6 +1804,254 @@ X-API-TOKEN:token（acquired from login）
 ```
 {
   "result": "UNAUTHORIZED",
+  "type": "API"
+}
+```
+
+###### Version does not match：
+```
+{
+  "result": "STALE_VERSION",
+  "type": "API"
+}
+```
+
+###### Executing error：
+```
+{
+  "result": "INTERNAL_ERROR",
+  "type": "API"
+}
+```
+
+
+### 获取BOOK
+GET /api/v1/risk/books
+
+请求时必须带Headers:
+
+X-API-TOKEN:token（通过login获得）
+
+***返回参数***
+
+| NAME           | TYPE    | DESCRIBE |
+| :------------- | :------ |:---------|
+| name           | string  | BOOK名称   |
+
+***返回参数示例***
+
+```
+{
+  "data": [
+    {
+      "name": "C"
+    },
+    {
+      "name": "D"
+    },
+    {
+      "name": "B"
+    }
+  ],
+  "result": "SUCCESS",
+  "type": "API"
+}
+```
+
+
+### 获取风控信息
+GET /api/v1/risk/positions
+
+请求时必须带Headers:
+
+X-API-TOKEN:token（通过login获得）
+
+***请求参数***
+
+| NAME         | REQUIRED | TYPE   | DESCRIBE | DEFAULT | VALUES RANGE |
+|:-------------|:---------| :----- |:---------| :------ | :----------- |
+| book         | Y        | string | 账簿缩写    |         |              |
+| currency     | Y        | string | 币种       |         |              |
+
+***返回参数***
+
+| NAME  | TYPE   | DESCRIBE |
+| :---- | :----- |:---------|
+| book | string | 账本缩写     |
+| amount | string | 交易金额     |
+| broker | string | 做市商      |
+| dailyAmount | string | 日交易金额    |
+| dailyVolume | string | 日交交易量    |
+| grossAmount | string | 全部金额     |
+| hedgePl | string | 对冲损益     |
+| hedgeVolume | string | 对冲交易量    |
+| mtmAmount | string | 盯市金额     |
+| netPl | string | net损益    |
+| netVolume | string | net金额    |
+| symbol | string | 商品       |
+| volume | string | 交易量      |
+
+***返回参数示例***
+
+```
+{
+  "data": [
+    {
+      "amount": "-24.965755970000",
+      "book": "D",
+      "broker": "BT",
+      "dailyAmount": "0.000000000000",
+      "dailyVolume": "0.000000000000",
+      "grossAmount": "-23.894555580000",
+      "hedgePl": "0.000000000000",
+      "hedgeVolume": "0.000000000000",
+      "mtmAmount": "-104.157200000000",
+      "netPl": "0.000000000000",
+      "netVolume": "0.000000000000",
+      "symbol": "ETHUSDT",
+      "volume": "0.040000000000"
+    },
+    {
+      "amount": "-278.923365370000",
+      "book": "D",
+      "broker": "BT",
+      "dailyAmount": "0.000000000000",
+      "dailyVolume": "0.000000000000",
+      "grossAmount": "-279.317741740000",
+      "hedgePl": "0.000000000000",
+      "hedgeVolume": "0.000000000000",
+      "mtmAmount": "-475.553459990400",
+      "netPl": "0.000000000000",
+      "netVolume": "0.000000000000",
+      "symbol": "BTCUSDT",
+      "volume": "0.014572760000"
+    }
+  ],
+  "result": "SUCCESS",
+  "type": "API"
+}
+```
+
+
+### 暂停做市
+PUT /api/v1/making/makingConfigs/pause
+
+请求时必须带Headers:
+
+X-API-TOKEN:token（通过login获得）
+
+***请求参数***
+
+| NAME                          | TYPE        | DESCRIBE                  |
+| :---------------------------- | :---------- | :------------------------ |
+| cp                            |     Y       |string       |交易对手|
+| symbol                        |     Y       |string       |币对| 
+
+
+***返回参数***
+
+| NAME                 | TYPE       | DESCRIBE                                                                         |
+| :------------------- | :--------- | :------------------------------------------------------------------------------- |   
+| result               | string     | 'SUCCESS' or 'INVALID_DATA' or 'REJECTED' or 'STALE_VERSION' or 'INTERNAL_ERROR' |
+| type                 | string     | 'API'                                                                            |
+
+
+***返回参数示例***
+
+###### Execute success：
+```
+{
+  "result": "SUCCESS",
+  "type": "API"
+}
+```
+
+###### Parameter validate fail：
+```
+{
+  "result": "INVALID_DATA",
+  "type": "API",
+  "validations": {
+    "basic.cp": "INVALID"
+  }
+}
+```
+
+###### Target config not exist, reject update：
+```
+{
+  "result": "REJECTED",
+  "type": "API"
+}
+```
+
+###### Version does not match：
+```
+{
+  "result": "STALE_VERSION",
+  "type": "API"
+}
+```
+
+###### Executing error：
+```
+{
+  "result": "INTERNAL_ERROR",
+  "type": "API"
+}
+```
+
+
+
+### 停止做市
+PUT /api/v1/making/makingConfigs/stop
+
+请求时必须带Headers:
+
+X-API-TOKEN:token（通过login获得）
+
+***请求参数***
+
+| NAME       | TYPE        | DESCRIBE |
+|:-----------| :---------- |:---------|
+| cp         |     Y       | string   |交易对手|
+| symbol     |     Y       | string   |币对| 
+| aggressive |     Y       | bool     |强制取消所有订单| 
+
+
+***返回参数***
+
+| NAME                 | TYPE       | DESCRIBE                                                                         |
+| :------------------- | :--------- | :------------------------------------------------------------------------------- |   
+| result               | string     | 'SUCCESS' or 'INVALID_DATA' or 'REJECTED' or 'STALE_VERSION' or 'INTERNAL_ERROR' |
+| type                 | string     | 'API'                                                                            |
+
+
+***返回参数示例***
+
+###### Execute success：
+```
+{
+  "result": "SUCCESS",
+  "type": "API"
+}
+```
+
+###### Parameter validate fail：
+```
+{
+  "result": "INVALID_DATA",
+  "type": "API",
+  "validations": {
+    "basic.cp": "INVALID"
+  }
+}
+```
+
+###### Target config not exist, reject update：
+```
+{
+  "result": "REJECTED",
   "type": "API"
 }
 ```
