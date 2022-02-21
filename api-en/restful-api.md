@@ -1891,7 +1891,7 @@ X-API-TOKEN:token（acquired from login）
 ```
 
 
-### get—positions
+### get-positions
 GET /api/v1/risk/positions
 
 request with Headers:
