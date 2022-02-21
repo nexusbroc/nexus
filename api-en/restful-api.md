@@ -33,7 +33,7 @@
 | [/api/v1/making/targetPriceConfigs/update](#update-target-price-config)      | POST  | update target price config             |
 | [/api/v1/making/targetPriceConfigs/delete](#delete-target-price-config)      | DELETE  | delete target price config             |
 | [/api/v1/risk/books](#get-book)                                              | GET  | get book                               |
-| [/api/v1/risk/positions](#get—positions)                                     | GET  | get positions                          |
+| [/api/v1/risk/positions](#get-positions)                                     | GET  | get positions                          |
 
 ## Restful API
 ### login
